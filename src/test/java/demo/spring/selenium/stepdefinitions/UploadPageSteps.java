@@ -9,15 +9,23 @@ public class UploadPageSteps {
 
     @Given ("I Open Upload Page")
     public void iOpenLoginPage(){
-        UploadPage.verifyFooterText();
+        UploadPage.verifyFileUpload();
     }
 
     @Then("I Click Browse")
     public void iClickBrowse() {
-        UploadPage.clickUpload();
+        UploadPage.clickChooseFile();
     }
 
     @And("I Click Upload")
     public void iClickUpload() {
+        UploadPage.clickUpload();
     }
+
+    @And("I Should See File")
+    public void iShouldSeeFile() {
+        UploadPage.verifyFileAlreadyUploaded();
+    }
+
+
 }

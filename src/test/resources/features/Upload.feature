@@ -6,8 +6,4 @@ Feature: Upload
   Scenario Outline: Login scenario
     Then I Click Browse
     And I Click Upload
-    And I should see "<textValidation>" text
-    Examples:
-      | password   | textValidation              |
-      | Honda2020! | Announcement                |
-      | password   | Invalid username / password |
+    And I Should See File
