@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class demo.spring.selenium.CucumberRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class demo.spring.selenium.CucumberRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/demo.spring.selenium.html">demo.spring.selenium</a> &gt; CucumberRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m9.74s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">runScenario[0](&quot;Login scenario&quot;, &quot;Login&quot;)</td>
+<td class="success">57.395s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">runScenario[1](&quot;Login scenario&quot;, &quot;Login&quot;)</td>
+<td class="success">12.344s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>10:45:59.617 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [Hooks]: using SpringBootContextLoader
+10:45:59.620 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [demo.spring.selenium.stepdefinitions.Hooks]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:45:59.661 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [Hooks]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+10:45:59.818 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+10:45:59.820 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+10:45:59.823 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [Hooks]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.0)
+
+2022-12-16T10:46:00.385+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : Starting Hooks using Java 17.0.5 with PID 9616 (C:\Users\MDM\Downloads\AHM_selenium\build\classes\java\test started by MDM in C:\Users\MDM\Downloads\AHM_selenium)
+2022-12-16T10:46:00.389+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-12-16T10:46:00.975+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : Started Hooks in 1.101 seconds (process running for 4.001)
+2022-12-16T10:46:01.054+07:00  INFO 9616 --- [    Test worker] o.o.s.r.t.o.OpenTelemetryTracer          : Using OpenTelemetry for tracing
+
+@login.sukses @sanity
+Scenario Outline: Login scenario          ?[90m# src/test/resources/features/Login.feature:25?[0m
+2022-12-16T10:46:21.594+07:00  WARN 9616 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: demo.spring.selenium.pages.HomePage
+  ?[32mGiven ?[0m?[32mI Open PASTI?[0m                      ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iOpenLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mI fill in ?[0m?[32m?[1m&quot;m.dummy.b1&quot;?[0m?[32m as username?[0m ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsUsername(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI Fill in ?[0m?[32m?[1m&quot;Honda2020!&quot;?[0m?[32m as password?[0m ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click login button?[0m                ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iClickLoginButton()?[0m
+2022-12-16T10:46:52.687+07:00  WARN 9616 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: demo.spring.selenium.pages.DashboardPage
+  ?[32mAnd ?[0m?[32mI should see ?[0m?[32m?[1m&quot;Announcement&quot;?[0m?[32m text?[0m    ?[90m# demo.spring.selenium.stepdefinitions.DashboardPageSteps.i_should_see_text(java.lang.String)?[0m
+
+    Embedding Login scenario [image/png 231542 bytes]
+
+2022-12-16T10:46:56.836+07:00  WARN 9616 --- [    Test worker] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'webDriverFactory' threw an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 90.0.2, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:debuggerAddress: localhost:46751, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2292, moz:profile: /tmp/rust_mozprofile4tSnb7, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.4.72-microsoft-standard-WSL2, proxy: Proxy(), se:cdp: ws://172.18.0.6:5555/sessio..., se:cdpVersion: 85, se:vnc: ws://172.18.0.6:5555/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://localhost:7900/websockify, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+
+@login.sukses @sanity
+Scenario Outline: Login scenario                      ?[90m# src/test/resources/features/Login.feature:26?[0m
+  ?[32mGiven ?[0m?[32mI Open PASTI?[0m                                  ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iOpenLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mI fill in ?[0m?[32m?[1m&quot;m.dummy.b1&quot;?[0m?[32m as username?[0m             ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsUsername(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI Fill in ?[0m?[32m?[1m&quot;password&quot;?[0m?[32m as password?[0m               ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click login button?[0m                            ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32mI should see ?[0m?[32m?[1m&quot;Invalid username / password&quot;?[0m?[32m text?[0m ?[90m# demo.spring.selenium.stepdefinitions.DashboardPageSteps.i_should_see_text(java.lang.String)?[0m
+
+    Embedding Login scenario [image/png 440524 bytes]
+
+2022-12-16T10:47:09.202+07:00  WARN 9616 --- [    Test worker] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'webDriverFactory' threw an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 90.0.2, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:debuggerAddress: localhost:39867, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2278, moz:profile: /tmp/rust_mozprofilerYOngb, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.4.72-microsoft-standard-WSL2, proxy: Proxy(), se:cdp: ws://172.18.0.7:5555/sessio..., se:cdpVersion: 85, se:vnc: ws://172.18.0.7:5555/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://localhost:7900/websockify, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at Dec 16, 2022, 10:47:09 AM</p>
+</div>
+</div>
+</body>
+</html>

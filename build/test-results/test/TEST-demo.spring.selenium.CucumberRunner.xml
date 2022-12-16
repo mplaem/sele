@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.spring.selenium.CucumberRunner" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-16T03:45:59" hostname="DESKTOP-TBV4CIS" time="69.749">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Login scenario&quot;, &quot;Login&quot;)" classname="demo.spring.selenium.CucumberRunner" time="57.395"/>
+  <testcase name="runScenario[1](&quot;Login scenario&quot;, &quot;Login&quot;)" classname="demo.spring.selenium.CucumberRunner" time="12.344"/>
+  <system-out><![CDATA[10:45:59.617 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [Hooks]: using SpringBootContextLoader
+10:45:59.620 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [demo.spring.selenium.stepdefinitions.Hooks]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:45:59.661 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [Hooks]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+10:45:59.818 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+10:45:59.820 [Test worker] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+10:45:59.823 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [Hooks]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.0)
+
+2022-12-16T10:46:00.385+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : Starting Hooks using Java 17.0.5 with PID 9616 (C:\Users\MDM\Downloads\AHM_selenium\build\classes\java\test started by MDM in C:\Users\MDM\Downloads\AHM_selenium)
+2022-12-16T10:46:00.389+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : No active profile set, falling back to 1 default profile: "default"
+2022-12-16T10:46:00.975+07:00  INFO 9616 --- [    Test worker] d.spring.selenium.stepdefinitions.Hooks  : Started Hooks in 1.101 seconds (process running for 4.001)
+2022-12-16T10:46:01.054+07:00  INFO 9616 --- [    Test worker] o.o.s.r.t.o.OpenTelemetryTracer          : Using OpenTelemetry for tracing
+
+@login.sukses @sanity
+Scenario Outline: Login scenario          ?[90m# src/test/resources/features/Login.feature:25?[0m
+2022-12-16T10:46:21.594+07:00  WARN 9616 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: demo.spring.selenium.pages.HomePage
+  ?[32mGiven ?[0m?[32mI Open PASTI?[0m                      ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iOpenLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mI fill in ?[0m?[32m?[1m"m.dummy.b1"?[0m?[32m as username?[0m ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsUsername(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI Fill in ?[0m?[32m?[1m"Honda2020!"?[0m?[32m as password?[0m ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click login button?[0m                ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iClickLoginButton()?[0m
+2022-12-16T10:46:52.687+07:00  WARN 9616 --- [    Test worker] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: demo.spring.selenium.pages.DashboardPage
+  ?[32mAnd ?[0m?[32mI should see ?[0m?[32m?[1m"Announcement"?[0m?[32m text?[0m    ?[90m# demo.spring.selenium.stepdefinitions.DashboardPageSteps.i_should_see_text(java.lang.String)?[0m
+
+    Embedding Login scenario [image/png 231542 bytes]
+
+2022-12-16T10:46:56.836+07:00  WARN 9616 --- [    Test worker] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'webDriverFactory' threw an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 90.0.2, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:debuggerAddress: localhost:46751, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2292, moz:profile: /tmp/rust_mozprofile4tSnb7, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.4.72-microsoft-standard-WSL2, proxy: Proxy(), se:cdp: ws://172.18.0.6:5555/sessio..., se:cdpVersion: 85, se:vnc: ws://172.18.0.6:5555/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://localhost:7900/websockify, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+
+@login.sukses @sanity
+Scenario Outline: Login scenario                      ?[90m# src/test/resources/features/Login.feature:26?[0m
+  ?[32mGiven ?[0m?[32mI Open PASTI?[0m                                  ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iOpenLoginPage()?[0m
+  ?[32mWhen ?[0m?[32mI fill in ?[0m?[32m?[1m"m.dummy.b1"?[0m?[32m as username?[0m             ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsUsername(java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI Fill in ?[0m?[32m?[1m"password"?[0m?[32m as password?[0m               ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iFillInAsPassword(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32mI click login button?[0m                            ?[90m# demo.spring.selenium.stepdefinitions.HomePageSteps.iClickLoginButton()?[0m
+  ?[32mAnd ?[0m?[32mI should see ?[0m?[32m?[1m"Invalid username / password"?[0m?[32m text?[0m ?[90m# demo.spring.selenium.stepdefinitions.DashboardPageSteps.i_should_see_text(java.lang.String)?[0m
+
+    Embedding Login scenario [image/png 440524 bytes]
+
+2022-12-16T10:47:09.202+07:00  WARN 9616 --- [    Test worker] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'webDriverFactory' threw an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 90.0.2, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:debuggerAddress: localhost:39867, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 2278, moz:profile: /tmp/rust_mozprofilerYOngb, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: LINUX, platformVersion: 5.4.72-microsoft-standard-WSL2, proxy: Proxy(), se:cdp: ws://172.18.0.7:5555/sessio..., se:cdpVersion: 85, se:vnc: ws://172.18.0.7:5555/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://localhost:7900/websockify, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
